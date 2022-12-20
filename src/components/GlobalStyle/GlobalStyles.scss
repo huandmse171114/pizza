@@ -1,0 +1,76 @@
+//reset css
+@import 'normalize.css';
+
+// import family font
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #fd9d3e;
+    --primary-bold: #7c4207;
+    --black: #000;
+    --white: #fff;
+    --text-color: #333;
+    --container-width: 1400px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+button,
+input,
+[tabindex] {
+    border: none;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a[href] {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.container {
+    width: var(--container-width);
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    padding: 0 12px;
+    background-color: transparent;
+}
+
+.btn {
+    border: none;
+    background-color: #eee;
+    padding: 18px 12px;
+    border-radius: 25px;
+    min-width: 140px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+.btn.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+}

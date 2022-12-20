@@ -1,0 +1,33 @@
+.ordering-content {
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+    height: 350px;
+}
+
+.ordering-section {
+    width: 20%;
+    text-align: center;
+}
+
+.section-icon img {
+    width: 100px;
+    transition: 0.4s;
+}
+
+.section-heading {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+}
+
+.section-icon:hover img {
+    transform: translateY(-2%);
+    color: var(--white);
+    opacity: 0.8;
+}
+
+.section-desc {
+    font-size: 1.4rem;
+}
