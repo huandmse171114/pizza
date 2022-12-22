@@ -2,6 +2,12 @@ import styles from './Footer.module.scss';
 import classNames from 'classnames/bind';
 import images from '../../../../assets/images';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faFacebookF,
+    faInstagram,
+    faLinkedinIn,
+    faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
 const cx = classNames.bind(styles);
 
 function Footer() {
@@ -20,10 +26,15 @@ function Footer() {
                         </li>
                         <li className={cx('section-desc-item')}>
                             PHONE -{' '}
-                            <span>+91 123 456 789 0 , +91 123 456 789 0</span>
+                            <span className={cx('active')}>
+                                +91 123 456 789 0 , +91 123 456 789 0
+                            </span>
                         </li>
                         <li className={cx('section-desc-item')}>
-                            EMAIL - <span>support@pizzon.com</span>
+                            EMAIL -{' '}
+                            <span className={cx('active')}>
+                                support@pizzon.com
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -85,16 +96,16 @@ function Footer() {
                 </div>
                 <ul className={cx('copyright-social-list')}>
                     <li className={cx('copyright-social-item')}>
-                        {/* <FontAwesomeIcon icon={}></FontAwesomeIcon> */}
+                        <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
                     </li>
                     <li className={cx('copyright-social-item')}>
-                        {/* <FontAwesomeIcon icon={}></FontAwesomeIcon> */}
+                        <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
                     </li>
                     <li className={cx('copyright-social-item')}>
-                        {/* <FontAwesomeIcon icon={}></FontAwesomeIcon> */}
+                        <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
                     </li>
                     <li className={cx('copyright-social-item')}>
-                        {/* <FontAwesomeIcon icon={}></FontAwesomeIcon> */}
+                        <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
                     </li>
                 </ul>
             </div>
