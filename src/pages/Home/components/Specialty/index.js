@@ -8,7 +8,7 @@ function Specialty() {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('specialty-content')}>
-                <div className={cx('specialty-center')}>
+                <div className={cx('center-content')}>
                     <h4 className={cx('center-sub-heading')}>
                         Fresh From DSC Pizza
                     </h4>

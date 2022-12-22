@@ -270,12 +270,12 @@ function Banner() {
             {/* Banner navigation icon start */}
             <FontAwesomeIcon
                 onClick={handleBannerLeftIconClick}
-                className={`${cx('banner-navigation-icon')} ${cx('left')}`}
+                className={`${cx('navigation-icon')} ${cx('left')}`}
                 icon={faChevronLeft}
             />
             <FontAwesomeIcon
                 onClick={handleBannerRightIconClick}
-                className={`${cx('banner-navigation-icon')} ${cx('right')}`}
+                className={`${cx('navigation-icon')} ${cx('right')}`}
                 icon={faChevronRight}
             />
             {/* Banner navigation icon end */}

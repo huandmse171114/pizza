@@ -1,16 +1,16 @@
 import classNames from 'classnames/bind';
-import styles from './Ordering.module.scss';
+import styles from './Preview.module.scss';
 import images from '../../../../assets/images';
 
 const cx = classNames.bind(styles);
 
-function Ordering() {
+function Preview() {
     return (
         <div className={cx('wrapper')}>
-            <div className={cx('ordering-content')}>
+            <div className={cx('preview-content')}>
                 <div
-                    className={`${cx('ordering-order')} ${cx(
-                        'ordering-section',
+                    className={`${cx('preview-order')} ${cx(
+                        'preview-section',
                     )} `}
                 >
                     <div className={cx('section-icon')}>
@@ -26,8 +26,8 @@ function Ordering() {
                     </p>
                 </div>
                 <div
-                    className={`${cx('ordering-delivery')} ${cx(
-                        'ordering-section',
+                    className={`${cx('preview-delivery')} ${cx(
+                        'preview-section',
                     )} `}
                 >
                     <div className={cx('section-icon')}>
@@ -45,8 +45,8 @@ function Ordering() {
                     </p>
                 </div>
                 <div
-                    className={`${cx('ordering-receipe')} ${cx(
-                        'ordering-section',
+                    className={`${cx('preview-receipe')} ${cx(
+                        'preview-section',
                     )} `}
                 >
                     <div className={cx('section-icon')}>
@@ -62,11 +62,11 @@ function Ordering() {
                     </p>
                 </div>
             </div>
-            <div className={cx('ordering-footer')}>
+            <div className={cx('preview-footer')}>
                 <img src={images.separatorDown} alt=""></img>
             </div>
         </div>
     );
 }
 
-export default Ordering;
+export default Preview;

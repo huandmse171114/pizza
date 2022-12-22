@@ -6,7 +6,7 @@
 
 :root {
     --primary: #fd9d3e;
-    --primary-bold: #7c4207;
+    --primary-bold: #bd5e00;
     --black: #000;
     --white: #fff;
     --text-color: #333;
@@ -64,8 +64,9 @@ a[href] {
     text-align: center;
     font-weight: 600;
     text-transform: uppercase;
+    opacity: 0.8;
     &:hover {
-        opacity: 0.8;
+        opacity: 1;
         cursor: pointer;
     }
 }
@@ -73,4 +74,49 @@ a[href] {
 .btn.btn-primary {
     background-color: var(--primary);
     color: var(--white);
+}
+
+.btn.btn-dark {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--white);
+}
+
+.center-content {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.center-sub-heading {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+}
+
+.center-heading {
+    text-transform: uppercase;
+    font-size: 8rem;
+    line-height: 1;
+}
+
+.navigation-icon {
+    font-size: 5rem;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+.navigation-icon.left {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+}
+
+.navigation-icon.right {
+    position: absolute;
+    top: 50%;
+    right: 1%;
 }

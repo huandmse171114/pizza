@@ -138,7 +138,7 @@
 
 // ------------------------------------ Banner Navigation --------------------------------------------
 
-.banner-navigation-icon {
+.navigation-icon {
     color: var(--primary);
     font-size: 5rem;
     opacity: 0.6;
@@ -149,13 +149,13 @@
         opacity: 1;
     }
 }
-.banner-navigation-icon.left {
+.navigation-icon.left {
     position: absolute;
     top: 50%;
     left: 1%;
 }
 
-.banner-navigation-icon.right {
+.navigation-icon.right {
     position: absolute;
     top: 50%;
     right: 1%;
